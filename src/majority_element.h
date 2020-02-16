@@ -80,7 +80,7 @@ _FwdIt majority_element(_FwdIt begin, _FwdIt end, _Comp comp)
 	/* This is a majority element if it accounts for at least half the number
 	 * of elements.
 	 */
-	return (((ntotal >> 1) < nmatches) ? candidate : end);
+	return (((ntotal / 2) < nmatches) ? candidate : end);
 }
 
 /*!
